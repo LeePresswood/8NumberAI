@@ -11,7 +11,6 @@ public class BoardTest extends TestCase{
 
 	public void testInitializeBoard() throws Exception{
 		boolean result = true;
-
 		int counter = 0;
 		while(counter < 9){
 			if(b.getPositionOf(counter++) == null){
@@ -56,7 +55,6 @@ public class BoardTest extends TestCase{
 
 	public void testShiftOnANumberNotNextToBlank() throws Exception{
 		Board.Position position_zero = b.getPositionOf(0);
-
 		int bad_x = position_zero.x - 1;
 		if(bad_x < 0){
 			bad_x = 2;
@@ -71,7 +69,6 @@ public class BoardTest extends TestCase{
 
 	public void testShiftOnANumberNextToBlank() throws Exception{
 		Board.Position position_zero = b.getPositionOf(0);
-
 		int good_x = position_zero.x - 1;
 		if(good_x < 0){
 			good_x = 1;

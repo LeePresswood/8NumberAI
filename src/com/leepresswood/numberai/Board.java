@@ -1,5 +1,8 @@
 package com.leepresswood.numberai;
 
+import javafx.geometry.Pos;
+
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -71,6 +74,45 @@ public class Board{
 		}
 
 		return false;
+	}
+
+	public Integer[] getNeighborsOfBlank(){
+		Position blank_position = getPositionOf(0);
+		ArrayList<Integer> neighbors = new ArrayList<>();
+		for(int i = 1; i < 9; i++){
+			Position position = getPositionOf(i);
+			if(Math.abs(position.x - blank_position.x) == 1 && Math.abs(position.y - blank_position.y) == 0 || Math.abs(position.x - blank_position.x) == 0 && Math.abs(position.y - blank_position.y) == 1){
+				neighbors.add(i);
+			}
+		}
+
+		return (Integer[]) neighbors.toArray();
+	}
+
+	/**
+	 * Score the board based upon the Manhattan distance. Lower is better.
+	 * @return Sum of all the positions' Manhattan distances.
+	 */
+	public int getHeuristicScore(){
+		int score = 0;
+		for(int i = 1; i < 9; i++){
+			score += getManhattanDistance(i);
+		}
+
+		return score;
+	}
+
+	/**
+	 * Get the distance from the actual position.
+	 * @param value Value we're researching.
+	 * @return The Manhattan Distance.
+	 */
+	private int getManhattanDistance(int value){
+		Position current_position = getPositionOf(value);
+		int val_position_x = (value - 1) % 3;
+		int val_position_y = (value - 1) / 3;
+
+		return Math.abs(current_position.x - val_position_x) + Math.abs(current_position.y - val_position_y);
 	}
 
 	@Override
