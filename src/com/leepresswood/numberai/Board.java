@@ -30,8 +30,7 @@ public class Board{
 
 		//Set all numbers.
 		byte counter = 0;
-		byte decay = 100;
-		while(counter < 9 || decay > 0){
+		while(counter < 9){
 			//Choose a position at random.
 			int x = random.nextInt(3);
 			int y = random.nextInt(3);
@@ -39,9 +38,6 @@ public class Board{
 			//If this is free, place and move on.
 			if(numbers[y][x] == -1){
 				numbers[y][x] = counter++;
-			}
-			else{
-				decay--;
 			}
 		}
 	}
