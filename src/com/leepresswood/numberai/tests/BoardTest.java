@@ -7,20 +7,22 @@ import junit.framework.TestCase;
  * Created by leepresswood on 12/17/15.
  */
 public class BoardTest extends TestCase{
+	Board b = new Board();
+
 	public void testInitializeBoard() throws Exception{
-		Board b = new Board();
+		boolean result = true;
+
 		byte counter = 0;
-		while(counter != 10){
+		while(counter < 9){
 			if(b.getPositionOf(counter++) == null){
-				assert false;
+				result = false;
 			}
 		}
 
-		assert true;
+		assertTrue(result);
 	}
 
 	public void testGetPositionOf() throws Exception{
-		Board b = new Board();
 		byte counter = -5;
 		while(counter < 15){
 			if(counter < 0 || counter > 9){
@@ -35,12 +37,6 @@ public class BoardTest extends TestCase{
 			}
 		}
 		assert true;
-
-		for(byte j = 0; j < 3; j++){
-			for(byte i = 0; i < 3; i++){
-
-			}
-		}
 	}
 
 	public void testCanShift() throws Exception{
