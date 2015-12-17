@@ -50,7 +50,6 @@ public class Board{
 				}
 			}
 		}
-
 		return null;
 	}
 
@@ -63,7 +62,15 @@ public class Board{
 		//Find the blank location.
 		Position blank_position = getPositionOf(0);
 
-		return true;
+		//Blank position must be within 1 of the requested shift position.
+		if(Math.abs(position.x - blank_position.x) == 1 || Math.abs(position.y - blank_position.y) == 1){
+			//Shift can work. Put the selected position's value in the blank position and put a blank in this position.
+			numbers[blank_position.y][blank_position.x] = numbers[position.y][position.x];
+			numbers[position.y][position.x] = 0;
+			return true;
+		}
+
+		return false;
 	}
 
 	@Override
