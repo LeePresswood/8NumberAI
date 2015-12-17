@@ -17,7 +17,7 @@ public class Board{
 		this.numbers = Arrays.copyOf(to_copy.numbers.clone(), to_copy.numbers.length);
 	}
 
-	private void initializeBoard(){
+	public void initializeBoard(){
 		numbers = new byte[3][3];
 		Random random = new Random();
 
