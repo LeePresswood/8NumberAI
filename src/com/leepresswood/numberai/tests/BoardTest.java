@@ -33,6 +33,7 @@ public class BoardTest extends TestCase{
 			}
 			counter++;
 		}
+
 		assertTrue(result);
 	}
 
@@ -40,15 +41,16 @@ public class BoardTest extends TestCase{
 		boolean result = true;
 		int counter = 0;
 		while(counter < 9){
-			if(!(b.getPositionOf(counter) == null)){
+			if(b.getPositionOf(counter) == null){
 				result = false;
 			}
 			counter++;
 		}
+
 		assertTrue(result);
 	}
 
-	public void testShiftOn0() throws Exception{
+	public void testShiftOnZero() throws Exception{
 		assertFalse(b.shift(b.getPositionOf(0)));
 	}
 

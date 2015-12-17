@@ -63,7 +63,7 @@ public class Board{
 		Position blank_position = getPositionOf(0);
 
 		//Blank position must be within 1 of the requested shift position.
-		if(Math.abs(position.x - blank_position.x) == 1 || Math.abs(position.y - blank_position.y) == 1){
+		if(Math.abs(position.x - blank_position.x) == 1 && Math.abs(position.y - blank_position.y) == 0 || Math.abs(position.x - blank_position.x) == 0 && Math.abs(position.y - blank_position.y) == 1){
 			//Shift can work. Put the selected position's value in the blank position and put a blank in this position.
 			numbers[blank_position.y][blank_position.x] = numbers[position.y][position.x];
 			numbers[position.y][position.x] = 0;
@@ -97,6 +97,11 @@ public class Board{
 		public Position(int x, int y){
 			this.x = x;
 			this.y = y;
+		}
+
+		@Override
+		public String toString(){
+			return "X: " + x + " : Y: " + y;
 		}
 	}
 

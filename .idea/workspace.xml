@@ -36,27 +36,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/leepresswood/numberai/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.26535088">
+              <caret line="65" column="150" selection-start-line="65" selection-start-column="150" selection-end-line="65" selection-end-column="150" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#196#197#0" expanded="true" />
                 <element signature="e#220#221#0" expanded="true" />
                 <element signature="e#251#252#0" expanded="true" />
                 <element signature="e#335#336#0" expanded="true" />
+                <element signature="e#2223#2224#0" expanded="true" />
+                <element signature="e#2263#2264#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BoardTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BoardTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/leepresswood/numberai/tests/BoardTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3004926">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -210,7 +212,7 @@
       <recent name="junit.framework.TestCase" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BoardTest.testGetPositionOfInBounds">
+  <component name="RunManager" selected="JUnit.BoardTest">
     <configuration default="false" name="BoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -225,32 +227,6 @@
       <option name="MAIN_CLASS_NAME" value="com.leepresswood.numberai.tests.BoardTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="BoardTest.testInitializeBoard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.leepresswood.numberai.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="8NumberAI" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.leepresswood.numberai.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.leepresswood.numberai.tests.BoardTest" />
-      <option name="METHOD_NAME" value="testInitializeBoard" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" />
@@ -328,6 +304,32 @@
       <option name="PACKAGE_NAME" value="com.leepresswood.numberai.tests" />
       <option name="MAIN_CLASS_NAME" value="com.leepresswood.numberai.tests.BoardTest" />
       <option name="METHOD_NAME" value="testGetPositionOfInBounds" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="BoardTest.testShiftOnANumberNotNextToBlank" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.leepresswood.numberai.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="8NumberAI" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.leepresswood.numberai.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.leepresswood.numberai.tests.BoardTest" />
+      <option name="METHOD_NAME" value="testShiftOnANumberNotNextToBlank" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -726,18 +728,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.BoardTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BoardTest.testInitializeBoard" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BoardTest.testGetPositionOf" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BoardTest.testGetPositionOfOutOfBounds" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BoardTest.testGetPositionOfInBounds" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BoardTest.testGetPositionOf" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BoardTest.testGetPositionOfOutOfBounds" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BoardTest.testGetPositionOfInBounds" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BoardTest.testShiftOnANumberNotNextToBlank" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BoardTest.testGetPositionOfInBounds" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BoardTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BoardTest.testGetPositionOfOutOfBounds" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BoardTest.testGetPositionOf" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BoardTest.testInitializeBoard" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.BoardTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BoardTest.testShiftOnANumberNotNextToBlank" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BoardTest.testGetPositionOfInBounds" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BoardTest.testGetPositionOfOutOfBounds" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BoardTest.testGetPositionOf" />
       </list>
     </recent_temporary>
   </component>
@@ -752,48 +754,48 @@
       <option name="number" value="Default" />
       <updated>1450186453846</updated>
       <workItem from="1450186462175" duration="19000" />
-      <workItem from="1450371789187" duration="7975000" />
+      <workItem from="1450371789187" duration="8820000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BoardTest - 2015.12.17 at 15h 19m 21s.xml">
+    <history-entry file="BoardTest - 2015.12.17 at 15h 38m 19s.xml">
       <configuration name="BoardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest - 2015.12.17 at 15h 20m 09s.xml">
+    <history-entry file="BoardTest - 2015.12.17 at 15h 39m 34s.xml">
       <configuration name="BoardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest - 2015.12.17 at 15h 21m 16s.xml">
+    <history-entry file="BoardTest - 2015.12.17 at 15h 49m 24s.xml">
       <configuration name="BoardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest - 2015.12.17 at 15h 28m 53s.xml">
+    <history-entry file="BoardTest - 2015.12.17 at 15h 49m 31s.xml">
       <configuration name="BoardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest - 2015.12.17 at 15h 30m 38s.xml">
-      <configuration name="BoardTest" configurationId="JUnit" />
+    <history-entry file="BoardTest_testShiftOnANumberNotNextToBlank - 2015.12.17 at 15h 39m 49s.xml">
+      <configuration name="BoardTest.testShiftOnANumberNotNextToBlank" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest - 2015.12.17 at 15h 32m 57s.xml">
-      <configuration name="BoardTest" configurationId="JUnit" />
+    <history-entry file="BoardTest_testShiftOnANumberNotNextToBlank - 2015.12.17 at 15h 41m 06s.xml">
+      <configuration name="BoardTest.testShiftOnANumberNotNextToBlank" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_testGetPositionOf - 2015.12.17 at 13h 09m 28s.xml">
-      <configuration name="BoardTest.testGetPositionOf" configurationId="JUnit" />
+    <history-entry file="BoardTest_testShiftOnANumberNotNextToBlank - 2015.12.17 at 15h 41m 25s.xml">
+      <configuration name="BoardTest.testShiftOnANumberNotNextToBlank" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_testGetPositionOf - 2015.12.17 at 13h 10m 04s.xml">
-      <configuration name="BoardTest.testGetPositionOf" configurationId="JUnit" />
+    <history-entry file="BoardTest_testShiftOnANumberNotNextToBlank - 2015.12.17 at 15h 41m 39s.xml">
+      <configuration name="BoardTest.testShiftOnANumberNotNextToBlank" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_testGetPositionOfInBounds - 2015.12.17 at 15h 32m 49s.xml">
-      <configuration name="BoardTest.testGetPositionOfInBounds" configurationId="JUnit" />
+    <history-entry file="BoardTest_testShiftOnANumberNotNextToBlank - 2015.12.17 at 15h 41m 55s.xml">
+      <configuration name="BoardTest.testShiftOnANumberNotNextToBlank" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BoardTest_testGetPositionOfInBounds - 2015.12.17 at 15h 34m 37s.xml">
-      <configuration name="BoardTest.testGetPositionOfInBounds" configurationId="JUnit" />
+    <history-entry file="BoardTest_testShiftOnANumberNotNextToBlank - 2015.12.17 at 15h 42m 03s.xml">
+      <configuration name="BoardTest.testShiftOnANumberNotNextToBlank" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7994000" />
+    <option name="totallyTimeSpent" value="8839000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="840" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -802,7 +804,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -812,7 +814,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39889196" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39889196" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -828,24 +830,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/leepresswood/numberai/tests/BoardTest.java</url>
-          <line>47</line>
+          <line>68</line>
           <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leepresswood/numberai/tests/BoardTest.java</url>
-          <line>66</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leepresswood/numberai/tests/BoardTest.java</url>
-          <line>43</line>
-          <properties />
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -880,26 +870,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/leepresswood/numberai/Board.java">
+    <entry file="file://$PROJECT_DIR$/src/com/leepresswood/numberai/tests/BoardTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/leepresswood/numberai/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26535088">
+          <caret line="65" column="150" selection-start-line="65" selection-start-column="150" selection-end-line="65" selection-end-column="150" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#196#197#0" expanded="true" />
             <element signature="e#220#221#0" expanded="true" />
             <element signature="e#251#252#0" expanded="true" />
             <element signature="e#335#336#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/leepresswood/numberai/tests/BoardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3004926">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2223#2224#0" expanded="true" />
+            <element signature="e#2263#2264#0" expanded="true" />
           </folding>
         </state>
       </provider>
