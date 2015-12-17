@@ -89,6 +89,10 @@ public class Board{
 		return (Integer[]) neighbors.toArray();
 	}
 
+	public boolean isSolved(){
+		return getHeuristicScore() == 0;
+	}
+
 	/**
 	 * Score the board based upon the Manhattan distance. Lower is better.
 	 * @return Sum of all the positions' Manhattan distances.
