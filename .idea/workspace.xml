@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac8acd03-b5c8-40bb-94e0-72076f34e0e6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/leepresswood/numberai/Board.java" afterPath="$PROJECT_DIR$/src/com/leepresswood/numberai/Board.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/leepresswood/numberai/tests/BoardTest.java" afterPath="$PROJECT_DIR$/src/com/leepresswood/numberai/tests/BoardTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/leepresswood/numberai/Main.java" afterPath="$PROJECT_DIR$/src/com/leepresswood/numberai/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/leepresswood/numberai/Solver.java" afterPath="$PROJECT_DIR$/src/com/leepresswood/numberai/Solver.java" />
     </list>
     <ignored path="8NumberAI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,20 +26,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/leepresswood/numberai/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.16447368">
+              <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+              <folding>
+                <element signature="e#100#101#0" expanded="true" />
+                <element signature="e#153#154#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/leepresswood/numberai/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7368421">
+            <state vertical-scroll-proportion="0.0">
               <caret line="84" column="28" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -50,6 +53,16 @@
                 <element signature="e#3470#3471#0" expanded="true" />
                 <element signature="e#3510#3511#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Solver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/leepresswood/numberai/Solver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -71,9 +84,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
         <option value="JUnit3 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -88,11 +101,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/leepresswood/numberai/Main.java" />
         <option value="$PROJECT_DIR$/src/com/leepresswood/numberai/BoardValue.java" />
         <option value="$PROJECT_DIR$/src/com/leepresswood/numberai/BoardTest.java" />
         <option value="$PROJECT_DIR$/src/com/leepresswood/numberai/tests/BoardTest.java" />
         <option value="$PROJECT_DIR$/src/com/leepresswood/numberai/Board.java" />
+        <option value="$PROJECT_DIR$/src/com/leepresswood/numberai/Solver.java" />
+        <option value="$PROJECT_DIR$/src/com/leepresswood/numberai/Main.java" />
       </list>
     </option>
   </component>
@@ -754,7 +768,7 @@
       <option name="number" value="Default" />
       <updated>1450186453846</updated>
       <workItem from="1450186462175" duration="19000" />
-      <workItem from="1450371789187" duration="10091000" />
+      <workItem from="1450371789187" duration="10215000" />
     </task>
     <servers />
   </component>
@@ -791,7 +805,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10110000" />
+    <option name="totallyTimeSpent" value="10234000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="840" extended-state="6" />
@@ -840,7 +854,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#100#101#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -854,11 +871,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/leepresswood/numberai/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/leepresswood/numberai/Board.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+          <caret line="84" column="28" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#3470#3471#0" expanded="true" />
+            <element signature="e#3510#3511#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -872,18 +897,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/leepresswood/numberai/Board.java">
+    <entry file="file://$PROJECT_DIR$/src/com/leepresswood/numberai/Solver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7368421">
-          <caret line="84" column="28" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/leepresswood/numberai/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16447368">
+          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#3470#3471#0" expanded="true" />
-            <element signature="e#3510#3511#0" expanded="true" />
+            <element signature="e#100#101#0" expanded="true" />
+            <element signature="e#153#154#0" expanded="true" />
           </folding>
         </state>
       </provider>
