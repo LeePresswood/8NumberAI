@@ -23,23 +23,20 @@ public class BoardTest extends TestCase{
 	}
 
 	public void testGetPositionOf() throws Exception{
+		boolean result = true;
 		byte counter = -5;
 		while(counter < 15){
-			if(counter < 0 || counter > 9){
+			if(counter < 0 || counter > 8){
 				if(b.getPositionOf(counter++) != null){
-					assert false;
+					result = false;
 				}
 			}
 			else{
 				if(!(b.getPositionOf(counter++) instanceof Board.Position)){
-					assert false;
+					result = false;
 				}
 			}
 		}
-		assert true;
-	}
-
-	public void testCanShift() throws Exception{
-
+		assertTrue(result);
 	}
 }

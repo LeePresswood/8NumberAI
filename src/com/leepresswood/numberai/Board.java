@@ -58,7 +58,7 @@ public class Board{
 		return null;
 	}
 
-	public void canShift(Direction direction){
+	public void shift(Direction direction){
 
 	}
 
