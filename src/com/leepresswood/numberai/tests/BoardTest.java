@@ -12,7 +12,7 @@ public class BoardTest extends TestCase{
 	public void testInitializeBoard() throws Exception{
 		boolean result = true;
 
-		byte counter = 0;
+		int counter = 0;
 		while(counter < 9){
 			if(b.getPositionOf(counter++) == null){
 				result = false;
@@ -24,7 +24,7 @@ public class BoardTest extends TestCase{
 
 	public void testGetPositionOf() throws Exception{
 		boolean result = true;
-		byte counter = -5;
+		int counter = -5;
 		while(counter < 15){
 			if(counter < 0 || counter > 8){
 				if(b.getPositionOf(counter++) != null){
