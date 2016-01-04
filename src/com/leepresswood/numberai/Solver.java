@@ -42,7 +42,7 @@ public class Solver{
 			boards[i].shift(boards[i].getPositionOf(neighbors[i]));
 
 			//Get the score and compare.
-			if(best == -1 || boards[best].getHeuristicScore() > boards[i].getHeuristicScore()){
+			if(best == -1 || boards[best].getHeuristicScore() > boards[i].getHeuristicScore() || boards[i].isSolved()){
 				best = i;
 			}
 		}

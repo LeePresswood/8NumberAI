@@ -76,7 +76,7 @@ public class Board{
 		return false;
 	}
 
-	public Integer[] getNeighborsOfBlank(){
+	public int[] getNeighborsOfBlank(){
 		Position blank_position = getPositionOf(0);
 		ArrayList<Integer> neighbors = new ArrayList<>();
 		for(int i = 1; i < 9; i++){
@@ -86,7 +86,12 @@ public class Board{
 			}
 		}
 
-		return (Integer[]) neighbors.toArray();
+		int[] as_int_array = new int[neighbors.size()];
+		for(int i = 0; i < neighbors.size(); i++){
+			as_int_array[i] = neighbors.get(i).intValue();
+		}
+
+		return as_int_array;
 	}
 
 	public boolean isSolved(){
