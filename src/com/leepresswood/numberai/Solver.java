@@ -31,7 +31,7 @@ public class Solver{
 
 	private static int getBestNeighbor(Board board){
 		Integer[] neighbors = board.getNeighborsOfBlank();
-		int best = 0;
+		int best = -1;
 
 		//Make clones of the board for each neighbor.
 		Board[] boards = new Board[neighbors.length];
@@ -39,11 +39,13 @@ public class Solver{
 			boards[i] = new Board(board);
 
 			//Shift this copy.
+			boards[i].shift(boards[i].getPositionOf(neighbors[i]));
 
-
+			//Get the score and compare.
+			if(best == -1 || boards[best].getHeuristicScore() > boards[i].getHeuristicScore()){
+				best = i;
+			}
 		}
-
-		//Compare the scores.
 
 		return best;
 	}
