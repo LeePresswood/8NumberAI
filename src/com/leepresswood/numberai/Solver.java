@@ -9,18 +9,18 @@ public class Solver{
 	 * @param board The board to work on.
 	 * @return Number of moves.
 	 */
-	public static int solve(Board board, int moves_previous){
-		if(moves_previous > 100){
+	public static int solve(Board board, int moves_previous, int max_depth){
+		//Branch was a failure.
+		if(moves_previous >= max_depth){
 			return -1;
 		}
-		System.out.println(moves_previous);
-		//Get the current score of the board.
-		int current_score = board.getHeuristicScore();
-		if(current_score == 0){
+
+		//Branch was a success.
+		if(board.getHeuristicScore() == 0){
 			return moves_previous;
 		}
 
-		//Recursively check best moves.
+		//Getting here means that we need to go deeper. Recursively check best moves.
 		int[] neighbors = board.getNeighborsOfBlank();
 		int[] this_boards_moves = new int[neighbors.length];
 		Board[] neighbor_boards = new Board[neighbors.length];
@@ -28,7 +28,7 @@ public class Solver{
 		for(int i = 0; i < neighbors.length; i++){
 			neighbor_boards[i] = new Board(board);
 			neighbor_boards[i].shift(neighbor_boards[i].getPositionOf(neighbors[i]));
-			this_boards_moves[i] = solve(neighbor_boards[i], moves_previous + 1);
+			this_boards_moves[i] = solve(neighbor_boards[i], moves_previous + 1, max_depth);
 
 			if(this_boards_moves[i] != -1 && this_boards_moves[i] < best_moves){
 				best_moves = this_boards_moves[i];
