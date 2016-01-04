@@ -116,12 +116,16 @@ public class Board{
 	 * @param value Value we're researching.
 	 * @return The Manhattan Distance.
 	 */
-	private int getManhattanDistance(int value){
+	public int getManhattanDistance(int value){
 		Position current_position = getPositionOf(value);
 		int val_position_x = (value - 1) % 3;
 		int val_position_y = (value - 1) / 3;
 
 		return Math.abs(current_position.x - val_position_x) + Math.abs(current_position.y - val_position_y);
+	}
+
+	public int getManhattanDistanceBetween(Position pos1, Position pos2){
+		return Math.abs(pos1.x - pos2.x) + Math.abs(pos1.y - pos2.y);
 	}
 
 	@Override

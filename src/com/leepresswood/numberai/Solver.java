@@ -26,6 +26,8 @@ public class Solver{
 		Board[] neighbor_boards = new Board[neighbors.length];
 		int best_moves = 9999;
 		for(int i = 0; i < neighbors.length; i++){
+			System.out.println(moves_previous + " : " + board.getHeuristicScore() + " : " + neighbors[i]);
+
 			neighbor_boards[i] = new Board(board);
 			neighbor_boards[i].shift(neighbor_boards[i].getPositionOf(neighbors[i]));
 			this_boards_moves[i] = solve(neighbor_boards[i], moves_previous + 1, max_depth);
@@ -36,26 +38,5 @@ public class Solver{
 		}
 
 		return (best_moves == 9999 ? -1 : best_moves);
-	}
-
-	private static int getBestNeighbor(Board board){
-		int[] neighbors = board.getNeighborsOfBlank();
-		int best = -1;
-
-		//Make clones of the board for each neighbor.
-		Board[] boards = new Board[neighbors.length];
-		for(int i = 0; i < boards.length; i++){
-			boards[i] = new Board(board);
-
-			//Shift this copy.
-			boards[i].shift(boards[i].getPositionOf(neighbors[i]));
-
-			//Get the score and compare.
-			if(best == -1 || boards[best].getHeuristicScore() > boards[i].getHeuristicScore() || boards[i].isSolved()){
-				best = i;
-			}
-		}
-
-		return best;
 	}
 }

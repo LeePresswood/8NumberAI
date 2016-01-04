@@ -77,4 +77,15 @@ public class BoardTest extends TestCase{
 
 		assertTrue(b.shift(b.getPositionOf(b.numbers[good_y][good_x])));
 	}
+
+	public void testManhattanDistanceOfSamePosition() throws Exception{
+		Board.Position position = b.getPositionOf(3);
+		assertTrue(b.getManhattanDistanceBetween(position, position) == 0);
+	}
+
+	public void testManhattanDistanceOfDifferentPosition() throws Exception{
+		Board.Position position1 = b.getPositionOf(3);
+		Board.Position position2 = b.getPositionOf(4);
+		assertFalse(b.getManhattanDistanceBetween(position1, position2) == 0);
+	}
 }
