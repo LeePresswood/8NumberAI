@@ -158,8 +158,4 @@ public class Board{
 			return "X: " + x + " : Y: " + y;
 		}
 	}
-
-	public enum Direction{
-		UP, DOWN, LEFT, RIGHT
-	}
 }
