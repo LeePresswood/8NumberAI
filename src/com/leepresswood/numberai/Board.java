@@ -118,10 +118,9 @@ public class Board{
 	 */
 	public int getManhattanDistance(int value){
 		Position current_position = getPositionOf(value);
-		int val_position_x = (value - 1) % 3;
-		int val_position_y = (value - 1) / 3;
+		Position good_position = new Position((value - 1) % 3, (value - 1) / 3);
 
-		return Math.abs(current_position.x - val_position_x) + Math.abs(current_position.y - val_position_y);
+		return getManhattanDistanceBetween(current_position, good_position);
 	}
 
 	public int getManhattanDistanceBetween(Position pos1, Position pos2){
