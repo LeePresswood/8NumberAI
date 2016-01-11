@@ -3,7 +3,7 @@ package com.leepresswood.numberai;
 public class Main {
 
     public static void main(String[] args) {
-        int moves = Solver.solve(new Board(), 10);
+        int moves = Solver.solve(new Board(), 3);
 
         if(moves != -1){
             System.out.println(moves);

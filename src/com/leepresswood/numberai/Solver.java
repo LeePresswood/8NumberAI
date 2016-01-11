@@ -35,13 +35,13 @@ public class Solver{
 	private static int getMax(Board board, int[] neighbors, int current_depth, int max_depth){
 		//Finding a score of 0 means we found the best possible solution.
 		if(board.isSolved()){
-			System.out.println("Solved.");
+		//	System.out.println("Solved at depth " + current_depth + ".");
 			return 0;
 		}
 
 		//Hitting the max depth means we should just return the score.
 		if(current_depth >= max_depth){
-			System.out.println("Max depth reached. Current score: " + board.getHeuristicScore() + ".");
+		//	System.out.println("Max depth reached. Current score: " + board.getHeuristicScore() + ".");
 			return board.getHeuristicScore();
 		}
 
@@ -55,20 +55,21 @@ public class Solver{
 			scores[i] = getMax(this_board, this_neighbors, current_depth + 1, max_depth);
 
 			//If we found a winning state, return immediately. This is a speedup.
-//			if(scores[i] == 0){
-//				System.out.println("Solved. Current depth: " + current_depth + ".");
-//				return i;
-//			}
+			if(scores[i] == 0){
+				//System.out.println("Solved. Current depth: " + current_depth + ".");
+				return i;
+			}
 		}
-
+		System.out.println(board);
 		int smallest_index = 0;
 		for(int i = 1; i < neighbors.length; i++){
+			System.out.println(i + " -> " + scores[i]);
 			if(scores[i] < scores[smallest_index]){
 				smallest_index = i;
 			}
 		}
 
-		System.out.println("Smallest index: " + smallest_index + " with a score of " + scores[smallest_index] + " found.");
+		//System.out.println("Smallest index: " + smallest_index + " with a score of " + scores[smallest_index] + " found.");
 		return smallest_index;
 	}
 }
