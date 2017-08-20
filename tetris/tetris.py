@@ -156,7 +156,7 @@ PIECES = {'S': S_SHAPE_TEMPLATE,
           'T': T_SHAPE_TEMPLATE}
 
 
-def main():
+def tetris_main():
     global FPSCLOCK, DISPLAYSURF, BASICFONT, BIGFONT
     pygame.init()
     FPSCLOCK = pygame.time.Clock()
@@ -165,7 +165,7 @@ def main():
     BIGFONT = pygame.font.Font('freesansbold.ttf', 100)
     pygame.display.set_caption('Tetromino')
 
-    final_score = runGame()
+    return runGame()
 
 
 def runGame():
@@ -191,7 +191,7 @@ def runGame():
             lastFallTime = time.time()  # reset lastFallTime
 
             if not isValidPosition(board, fallingPiece):
-                return  # can't fit a new piece on the board, so game over
+                return score # can't fit a new piece on the board, so game over
 
         checkForQuit()
         for event in pygame.event.get():  # event handling loop
@@ -466,5 +466,5 @@ def drawNextPiece(piece):
     drawPiece(piece, pixelx = WINDOWWIDTH - 120, pixely = 100)
 
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     tetris_main()
