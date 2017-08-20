@@ -1,5 +1,6 @@
 import tetris
 
+
 def main():
     final_score = tetris.tetris_main()
 
