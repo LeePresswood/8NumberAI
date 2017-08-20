@@ -354,7 +354,7 @@ def runGame():
     nextPiece = getNewPiece()
 
     while True:  # game loop
-        aiStep()
+        aiStep(fallingPiece, nextPiece, board)
 
         if fallingPiece == None:
             # No falling piece in play, so start a new piece at the top
@@ -455,7 +455,8 @@ def runGame():
         FPSCLOCK.tick(FPS)
 
 
-def aiStep():
+def aiStep(fallingPiece, nextPiece, board):
+    # if()
     event = pygame.event.Event(KEYDOWN)
     event.key = K_RIGHT
     pygame.event.post(event)
