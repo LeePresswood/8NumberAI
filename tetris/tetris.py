@@ -165,10 +165,7 @@ def main():
     BIGFONT = pygame.font.Font('freesansbold.ttf', 100)
     pygame.display.set_caption('Tetromino')
 
-    # showTextScreen('Tetromino')
-    while True:  # game loop
-        runGame()
-        # showTextScreen('Game Over')
+    final_score = runGame()
 
 
 def runGame():
