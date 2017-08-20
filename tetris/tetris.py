@@ -456,9 +456,18 @@ def runGame():
 
 
 def aiStep(fallingPiece, nextPiece, board):
-    # if()
+    if fallingPiece is None:
+        return
+
+    print(board)
+
     event = pygame.event.Event(KEYDOWN)
-    event.key = K_RIGHT
+
+    if fallingPiece['x'] < 3:
+        event.key = K_RIGHT
+    else:
+        event.key = K_LEFT
+
     pygame.event.post(event)
 
 def tetris_main():
