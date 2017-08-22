@@ -1,5 +1,7 @@
 package tetris.input;
 
+import com.leepresswood.AIAdapter;
+
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.Map;
@@ -19,19 +21,23 @@ public class KeyboardInput implements KeyListener {
     }
 
     public boolean left() {
-        return keyDown(KeyEvent.VK_LEFT);
+        //return keyDown(KeyEvent.VK_LEFT);
+        return AIAdapter.left();
     }
 
     public boolean right() {
-        return keyDown(KeyEvent.VK_RIGHT);
+//        return keyDown(KeyEvent.VK_RIGHT);
+        return AIAdapter.right();
     }
 
     public boolean drop() {
-        return keyDown(KeyEvent.VK_SPACE);
+//        return keyDown(KeyEvent.VK_SPACE);
+        return AIAdapter.drop();
     }
 
     public boolean rotate() {
-        return keyDown(KeyEvent.VK_UP);
+//        return keyDown(KeyEvent.VK_UP);
+        return AIAdapter.rotate();
     }
 
     public boolean pauseGame() {
